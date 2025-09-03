@@ -458,18 +458,18 @@
         function OpenPrintWindow() {
             var WindowObject;
 
-            var filePath = '../../files/PTOR.pdf';
+            var filePath = '../../files/BLeumi_20250903170015_324843531_TeudatNeche.pdf';
             WindowObject = window.open(filePath, '', 'width=800,height=800,top=50,left=50,scrollbars=1,resizable=yes');
             WindowObject.focus();
         }
         function downloadLocalFile() {
             // נתיב לקובץ מקומי (יחסי לדף)
-            var filePath = '../../files/PTOR.pdf'; // עדיף בלי עברית או רווחים
+            var filePath = '../../files/BLeumi_20250903170015_324843531_TeudatNeche.pdf'; // עדיף בלי עברית או רווחים
 
             // יצירת קישור זמני
             var a = document.createElement('a');
             a.href = filePath;
-            a.download = 'PTOR.pdf'; // השם שהקובץ יקבל אצל המשתמש
+            a.download = 'BLeumi_20250903170015_324843531_TeudatNeche.pdf'; // השם שהקובץ יקבל אצל המשתמש
             document.body.appendChild(a);
             a.click();
             document.body.removeChild(a);
