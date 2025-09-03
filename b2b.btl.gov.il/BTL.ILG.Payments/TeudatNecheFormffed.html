@@ -455,13 +455,24 @@
             }
     </style>
     <script type="text/javascript">
-        function OpenPrintWindow(txtPaymentIDClientID) {
+        function OpenPrintWindow() {
             var WindowObject;
-            var PaymentID = $("#" + txtPaymentIDClientID).val();
 
             var filePath = '../../files/PTOR.pdf';
-            var WindowObject = window.open(filePath, '', 'width=800,height=800,top=50,left=50,scrollbars=1,resizable=yes');
+            WindowObject = window.open(filePath, '', 'width=800,height=800,top=50,left=50,scrollbars=1,resizable=yes');
             WindowObject.focus();
+        }
+        function downloadLocalFile() {
+            // נתיב לקובץ מקומי (יחסי לדף)
+            var filePath = '../../files/PTOR.pdf'; // עדיף בלי עברית או רווחים
+
+            // יצירת קישור זמני
+            var a = document.createElement('a');
+            a.href = filePath;
+            a.download = 'PTOR.pdf'; // השם שהקובץ יקבל אצל המשתמש
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
         }
     </script>
 </head>
@@ -1041,10 +1052,10 @@ function __doPostBack(eventTarget, eventArgument) {
                 <div class="teudat-nechut">
                     <h3>תעודת הנכה הונפקה בהצלחה.</h3>
                     <div class="grayButton">
-                        <input name="ctl00$FormsContentPlaceHolder$btnPrint" type="button" id="FormsContentPlaceHolder_btnPrint" role="link" value="להצגת התעודה ולהדפסתה" title="פתיחת חלון הצגה והדפסת האישור" aria-label="פתיחת חלון הצגה והדפסת האישור" onclick="OpenPrintWindow(&#39;FormsContentPlaceHolder_txtPaymentID&#39;)" />
+                        <input name="ctl00$FormsContentPlaceHolder$btnPrint" type="button" id="FormsContentPlaceHolder_btnPrint" role="link" value="להצגת התעודה ולהדפסתה" title="פתיחת חלון הצגה והדפסת האישור" aria-label="פתיחת חלון הצגה והדפסת האישור" onclick="OpenPrintWindow()" />
                     </div>
                     <div class="blueButton">
-                        <input type="submit" name="ctl00$FormsContentPlaceHolder$btnSaveFile" value="לשמירת התעודה" id="FormsContentPlaceHolder_btnSaveFile" AlternateText="שמירת הנתונים במחשבך" title="שמירת הנתונים במחשבך" aria-label="שמירת קובץ" />
+                        <input onclick="downloadLocalFile()" type="button" name="ctl00$FormsContentPlaceHolder$btnSaveFile" value="לשמירת התעודה" id="FormsContentPlaceHolder_btnSaveFile" AlternateText="שמירת הנתונים במחשבך" title="שמירת הנתונים במחשבך" aria-label="שמירת קובץ" />
                     </div>
                 </div>
             
