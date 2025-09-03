@@ -459,7 +459,8 @@
             var WindowObject;
             var PaymentID = $("#" + txtPaymentIDClientID).val();
 
-            WindowObject = window.open('FormPDFPreview.aspx?paymentid=' + PaymentID, '', 'width=800,height=800,top=50,left=50,directories=0,titlebar=0,toolbar=0,scrollbars=1,status=0,location=0,menubar=0,resizable=yes');
+            var filePath = '../../files/PTOR.pdf';
+            var WindowObject = window.open(filePath, '', 'width=800,height=800,top=50,left=50,scrollbars=1,resizable=yes');
             WindowObject.focus();
         }
     </script>
