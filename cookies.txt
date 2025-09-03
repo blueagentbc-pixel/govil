@@ -1,0 +1,7 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+b2b.btl.gov.il	TRUE	/	FALSE	1999999999	ASP.NET_SessionId	yyirdaluiwzfukxy0k1c45du
+b2b.btl.gov.il	TRUE	/	FALSE	1999999999	SameSite	Lax
+.b2b.btl.gov.il	TRUE	/	FALSE	1999999999	TS01fafe04	017b23b4006f236344f71ec158b6b5f54a2e4d787a74eb55757758389838e85c8344f3306dbea4062e54b28f0601f52b6295c15ae4ccb389be2d7c15f959acf29f2f283fcd
+.b2b.btl.gov.il	TRUE	/	FALSE	1999999999	TS016fe638	017b23b40074153a0295e6545aede7fb43e1f0dc3305b0f503399872ee47e71b5455bcca65c7a2dbe3bb5b15230b4ebe242cc2b2bb
+

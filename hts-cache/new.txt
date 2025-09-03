@@ -1,0 +1,4 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+21:38:49	53041/53041	---M-Z	200	added ('OK')	text/html	date:Wed,%2003%20Sep%202025%2018:38:48%20GMT	https://b2b.btl.gov.il/BTL.ILG.Payments/TeudatNecheForm.aspx?E=AFFDB7959A1A2253656D7EDC219FF998	C:/Users/OH/Downloads/Ori/Ori1/b2b.btl.gov.il/BTL.ILG.Payments/TeudatNecheFormffed.html	(from )
+21:38:49	43/43	---M--	200	added ('OK')	text/html		https://b2b.btl.gov.il/robots.txt		(from )
+21:38:50	1051/1051	---MC-	200	added ('OK')	text/javascript	date:Wed,%2003%20Sep%202025%2018:38:50%20GMT	https://www.google.com/recaptcha/api.js?render=6LfBGVkqAAAAAPjGQs3MckRUzop3prHXEsqE_CzV	C:/Users/OH/Downloads/Ori/Ori1/www.google.com/recaptcha/api54b3.js	(from https://b2b.btl.gov.il/BTL.ILG.Payments/TeudatNecheForm.aspx?E=AFFDB7959A1A2253656D7EDC219FF998)
